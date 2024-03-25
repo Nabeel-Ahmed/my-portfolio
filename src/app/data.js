@@ -83,10 +83,10 @@ export const employmentHistory = [
       {
         name: "Railpoint CMS",
         description:
-          "Lead development on a bespoke CMS that allows us to manage and provide support for all RailPoint Screens across the UK. Build with React, Redux, SCSS and a Django Python backend.",
+          "Lead development on a bespoke CMS that was desgined to provide support for and manage content of the RailPoint Screens. It included reporting functionality which would monitor upkeep and statistics of Screens and allow users to open support tickets so we could resolve any issues. Build with React, Redux, SCSS and a Django Python backend.",
         languages: ["React", "Redux", "SCSS"],
         link: "https://www.twine.net/find/animators",
-        imageUrl: "/images/cms.webp",
+        imageUrl: "/images/cms2.png",
       },
       {
         name: "Railpoint Screens",
@@ -99,9 +99,9 @@ export const employmentHistory = [
       {
         name: "RailPay",
         description:
-          "RailPay allows users to search for and buy tickets on RailPoint screens.",
+          "An application integrated directly into the RailPoint Screens that enabled Train Operating Companies to allow commuters to purchase train tickets via NFC from RailPoint Touchscreens using their phones. This gave commuters more options to purchase tickets from improving the flow of the stations.  Built using React, Redux, SCSS with a Node JS and Express backend.",
         languages: ["React", "Redux", "SCSS"],
-        imageUrl: "/images/RailPay.webp",
+        imageUrl: "/images/RailPay2.jpg",
       },
       {
         name: "Times2",
@@ -132,3 +132,30 @@ export const employmentHistory = [
     ],
   },
 ];
+
+export function getAllProjects(employmentHistory) {
+  // Initialize an empty array to store all projects
+  let allProjects = [];
+
+  // Iterate over each employment object
+  employmentHistory.forEach((employment) => {
+    // Iterate over each project within the employment object
+    employment.projects.forEach((project) => {
+      // Add the company name property to the project object
+      const projectWithCompanyName = {
+        ...project,
+        companyName: employment.company,
+      };
+
+      // Push the augmented project object to the array of all projects
+      allProjects.push(projectWithCompanyName);
+    });
+  });
+
+  // Return the array containing all projects
+  return allProjects;
+}
+
+// Usage example:
+// const allProjects = getAllProjects(employmentHistory);
+// console.log(allProjects);

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { basePath } from "../data";
 
-export default function ProjectCard({ project, company }) {
+export default function ProjectCard({ project, company, url }) {
   return (
     <div
       className={`card flex-shrink-0 flex-grow-0 lg:w-1/4 ${
@@ -32,7 +32,16 @@ export default function ProjectCard({ project, company }) {
           ))}
         </div>
         <p>{project.description}</p>
-        <div class="badge badge-outline">{project.companyName}</div>
+        <div className="flex gap-2">
+          <a class="badge badge-accent" href={url}>
+            {project.companyName}
+          </a>
+          {project.link && (
+            <a class="badge badge-primary" href={project.link}>
+              Visit
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -53,6 +53,7 @@ export default function Home() {
               key={projIndex}
               project={project}
               company={project.company}
+              url={project.url}
             />
           ))}
         </div>

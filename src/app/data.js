@@ -3,6 +3,7 @@ export const employmentHistory = [
   {
     position: "Software Engineer",
     company: "Twine",
+    url: "https://twine.net/",
     branding: "twine",
     location: "Manchester (Remote), UK",
     startDate: "July 2022",
@@ -20,7 +21,7 @@ export const employmentHistory = [
           "An online marketplace that enables businesses to connect with freelancer by posting jobs which are then pitched on by skilled freelancer. Built using a React frontend and Laravel backend. ",
         languages: ["JavaScript", "React", "PHP", "Laravel", "CSS"],
         tech: ["Next JS", "Tailwind"],
-        link: "https://dmp.twine.net/",
+        link: "https://twine.net/jobs/",
         imageUrl: "/images/twine.webp",
       },
       {
@@ -29,6 +30,7 @@ export const employmentHistory = [
           "A Next.js App that programmatically generated static pages for each role and location on the Twine platform which significantly improved the SEO and increased our average monthly impressions by 5x.",
         languages: ["TypeScript", "Next.js", "Webflow", "AWS"],
         imageUrl: "/images/twinelp.webp",
+        link: "https://twine.net/find/animators/",
       },
       {
         name: "Dataset Management Platform",
@@ -44,7 +46,6 @@ export const employmentHistory = [
           "Built the Job Crawler using TypeScript, Node.js, AWS Lambda and puppeteer which would aggregate jobs from multiple job sites and post them on our own site, alongside SEO optimisation this increased our jobs page’s monthly impressions from 200k to 660k.",
         languages: ["TypeScript", "Puppeteer", "AWS", "Airtable"],
         tech: ["Next JS", "Tailwind"],
-        link: "https://dmp.twine.net/",
         imageUrl: "/images/twineJC.webp",
       },
     ],
@@ -52,6 +53,7 @@ export const employmentHistory = [
   {
     position: "Senior Frontend Engineer",
     company: "Huel",
+    url: "https://uk.huel.com/",
     branding: "huel",
     location: "Birmingham, UK",
     startDate: "Nov 2021",
@@ -66,13 +68,14 @@ export const employmentHistory = [
           'A Microfrontend designed to split out the subscription checkout allowing customers "Mix & Match" different products when building their cart or building subscription bundles.',
         languages: ["TypeScript", "React", "Redux", "Tailwind"],
         imageUrl: "/images/buildyourbundle.webp",
-        link: "https://www.twine.net/find/animators",
+        link: "https://uk.huel.com/products/build-your-own-bundle",
       },
     ],
   },
   {
     position: "Frontend Developer",
     company: "Kadfire",
+    url: "https://www.kadfire.com/",
     branding: "kadfire",
     location: "Redditch, UK",
     startDate: "Mar 2019",
@@ -86,7 +89,6 @@ export const employmentHistory = [
         description:
           "Lead development on a bespoke CMS that was desgined to provide support for and manage content of the RailPoint Screens. It included reporting functionality which would monitor upkeep and statistics of Screens and allow users to open support tickets so we could resolve any issues. Build with React, Redux, SCSS and a Django Python backend.",
         languages: ["React", "Redux", "SCSS"],
-        link: "https://www.twine.net/find/animators",
         imageUrl: "/images/cms2.png",
       },
       {
@@ -94,7 +96,6 @@ export const employmentHistory = [
         description:
           "RailPoint Screens use multiple data feeds to display up-to-the-minute travel information in both touch screen and non touchscreen format at train stations all across the UK. They can be used to plan journeys, as live departure boards, maps, to display station information and provide vital information to passengers such as distruptions and engineering works.",
         languages: ["JavaScript", "HTML", "CSS", "MQTT"],
-        link: "https://www.twine.net/find/animators",
         imageUrl: "/railpoint.webp",
       },
       {
@@ -116,6 +117,7 @@ export const employmentHistory = [
     position: "Junior Frontend Developer",
     company: "Pronto Etech Services",
     branding: "pronto",
+    url: "https://prontoetech.com/",
     location: "Birmingham, UK",
     startDate: "Sep 2017",
     endDate: "Mar 2019",
@@ -146,6 +148,7 @@ export function getAllProjects(employmentHistory) {
       const projectWithCompanyName = {
         ...project,
         companyName: employment.company,
+        url: employment.url,
       };
 
       // Push the augmented project object to the array of all projects

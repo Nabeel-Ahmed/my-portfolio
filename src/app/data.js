@@ -1,3 +1,4 @@
+export const basePath = "/my-portfolio";
 export const employmentHistory = [
   {
     position: "Software Engineer",

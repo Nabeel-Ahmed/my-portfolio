@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { basePath } from "../data";
 
 export default function ProjectCard({ project, company }) {
   return (
@@ -14,7 +15,7 @@ export default function ProjectCard({ project, company }) {
       {project.imageUrl && (
         <figure>
           <Image
-            src={project.imageUrl}
+            src={basePath + project.imageUrl}
             alt={project.altText}
             width={800}
             height={200}

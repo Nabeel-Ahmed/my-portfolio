@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen max-w-screen bg-base-200">
         <div className="hero-content text-center flex-col">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Nabeel Ahmed</h1>

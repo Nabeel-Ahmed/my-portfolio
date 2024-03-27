@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 export default function ProjectCard({ project, company }) {
   return (
     <div
-      className={`card flex-shrink-0 w-1/4 ${
+      className={`card flex-shrink-0 flex-grow-0 lg:w-1/4 ${
         company === "Huel" ? "bg-white" : "bg-base-300"
-      } shadow-xl mb-4 mt-4`}
+      } shadow-xl mb-4 mt-4 w-4/5 `}
     >
       {project.imageUrl && (
         <figure>
@@ -18,14 +18,12 @@ export default function ProjectCard({ project, company }) {
             alt={project.altText}
             width={800}
             height={200}
-            
-        basePath="/my-portfolio"
           />
         </figure>
       )}
       <div className="card-body flex flex-col h-full">
         <h2 className="card-title">{project.name}</h2>
-        <div className="flex gap-1">
+        <div className="flex gap-1 flex-wrap">
           {project.languages.map((language, langIndex) => (
             <div key={langIndex} className="badge badge-secondary">
               {language}

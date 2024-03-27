@@ -9,7 +9,6 @@ function ProjectCard({ imageUrl, altText, title, badges, description }) {
           alt={altText}
           width={500}
           height={100}
-          basePath="/my-portfolio"
           // You can adjust width and height props as needed
         />
       </figure>

@@ -11,9 +11,9 @@ export default function Home() {
   const allProjects = getAllProjects(employmentHistory);
 
   return (
-    <div>
+    <>
       <div className="hero min-h-screen max-w-screen bg-base-200">
-        <div className="hero-content text-center flex-col">
+        <div className="text-center flex-col">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Nabeel Ahmed</h1>
             <p className="py-6">
@@ -24,7 +24,7 @@ export default function Home() {
             </p>
           </div>
           {/* animation shit */}
-          <div className="relative flex overflow-x-hidden">
+          <div className="relative flex overflow-x-hidden max-w-screen">
             <div className="py-12 animate-marquee whitespace-nowrap">
               <span className="text-xl mx-4">JavaScript</span>
               <span className="text-xl mx-4">React</span>
@@ -70,6 +70,6 @@ export default function Home() {
         </div>
         {/* <TwineSecion /> */}
       </div>
-    </div>
+    </>
   );
 }

@@ -18,6 +18,8 @@ export default function ProjectCard({ project, company }) {
             alt={project.altText}
             width={800}
             height={200}
+            
+        basePath="/my-portfolio"
           />
         </figure>
       )}

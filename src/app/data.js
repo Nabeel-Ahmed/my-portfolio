@@ -94,7 +94,7 @@ export const employmentHistory = [
           "RailPoint Screens use multiple data feeds to display up-to-the-minute travel information in both touch screen and non touchscreen format at train stations all across the UK. They can be used to plan journeys, as live departure boards, maps, to display station information and provide vital information to passengers such as distruptions and engineering works.",
         languages: ["JavaScript", "HTML", "CSS", "MQTT"],
         link: "https://www.twine.net/find/animators",
-        imageUrl: "/railpoint.webp",
+        imageUrl: "/my-portfolio/railpoint.webp",
       },
       {
         name: "RailPay",

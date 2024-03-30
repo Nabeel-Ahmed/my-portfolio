@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen max-w-screen bg-base-200">
+      <div className="min-h-screen max-w-screen bg-gradient-to-b from-gray-700 to-gray-800">
         <div className="text-center flex flex-col items-center justify-center h-screen">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Nabeel Ahmed</h1>
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex-grow">
+      <div className="flex-grow bg-gradient-to-b from-gray-800 to-gray-000" >
         <div className="flex flex-row flex-wrap gap-8 justify-center">
           {allProjects?.map((project, projIndex) => (
             <ProjectCard

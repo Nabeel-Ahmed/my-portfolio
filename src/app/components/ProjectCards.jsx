@@ -6,6 +6,13 @@ import { motion } from "framer-motion";
 import { basePath } from "../data";
 
 export default function ProjectCard({ project, company, url }) {
+  let usePath = false
+
+  if (process.env.NODE_ENV === 'production') {
+    usePath = true;
+  }
+
+
   return (
     <div
       className={`card flex-shrink-0 flex-grow-0 md:w-2/5 lg:w-3/12 ${
@@ -15,7 +22,7 @@ export default function ProjectCard({ project, company, url }) {
       {project.imageUrl && (
         <figure>
           <Image
-            src={basePath + project.imageUrl}
+            src={usePath ? basePath + project.imageUrl : project.imageUrl}
             alt={project.altText}
             width={800}
             height={200}

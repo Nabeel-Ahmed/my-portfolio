@@ -3,7 +3,6 @@ import { employmentHistory, getAllProjects } from "./data";
 import ProjectCard from "./components/ProjectCards";
 
 export default function Home() {
-  console.log("lol");
   const allProjects = getAllProjects(employmentHistory);
 
   return (

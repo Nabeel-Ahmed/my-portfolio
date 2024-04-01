@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { useRef } from "react";
 import { employmentHistory } from "../data";
 import ProjectCard from "../components/ProjectCards";
 

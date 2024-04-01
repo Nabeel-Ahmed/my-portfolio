@@ -8,7 +8,7 @@ import { basePath } from "../data";
 export default function ProjectCard({ project, company, url }) {
   return (
     <div
-      className={`card flex-shrink-0 flex-grow-0 lg:w-1/4 ${
+      className={`card flex-shrink-0 flex-grow-0 md:w-2/5 lg:w-3/12 ${
         company === "Huel" ? "bg-white" : "bg-base-300"
       } shadow-xl mb-4 mt-4 w-4/5 `}
     >

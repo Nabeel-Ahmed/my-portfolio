@@ -8,7 +8,7 @@ import { basePath } from "../data";
 export default function ProjectCard({ project, company, url }) {
   return (
     <div
-      className={`card flex-shrink-0 flex-grow-0 lg:w-1/4 ${
+      className={`card flex-shrink-0 flex-grow-0 md:w-2/5 lg:w-3/12 ${
         company === "Huel" ? "bg-white" : "bg-base-300"
       } shadow-xl mb-4 mt-4 w-4/5 `}
     >
@@ -33,11 +33,11 @@ export default function ProjectCard({ project, company, url }) {
         </div>
         <p>{project.description}</p>
         <div className="flex gap-2">
-          <a class="badge badge-accent" href={url}>
+          <a className="badge badge-accent" href={url}>
             {project.companyName}
           </a>
           {project.link && (
-            <a class="badge badge-primary" href={project.link}>
+            <a className="badge badge-primary" href={project.link}>
               Visit
             </a>
           )}

@@ -26,7 +26,7 @@ export default function Home() {
 
           {/* animation shit */}
           <div>
-            <div className="overflow-x-hidden max-w-md">
+            <div className="overflow-x-hidden max-w-md z-10">
               <div className="py-12 animate-marquee whitespace-nowrap">
                 <span className="text-xl mx-4">JavaScript</span>
                 <span className="text-xl mx-4">React</span>

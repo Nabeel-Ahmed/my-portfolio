@@ -1,10 +1,6 @@
 "use client";
-import { useRef } from "react";
-import Head from "next/head";
-import Image from "next/image";
 import { employmentHistory, getAllProjects } from "./data";
 import ProjectCard from "./components/ProjectCards";
-import TwineSecion from "./components/TwineSection";
 
 export default function Home() {
   console.log("lol");
@@ -24,7 +20,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* animation shit */}
           <div>
             <div className="overflow-x-hidden max-w-md z-10">
               <div className="py-12 animate-marquee whitespace-nowrap">

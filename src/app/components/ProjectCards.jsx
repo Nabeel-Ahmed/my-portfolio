@@ -33,11 +33,11 @@ export default function ProjectCard({ project, company, url }) {
         </div>
         <p>{project.description}</p>
         <div className="flex gap-2">
-          <a class="badge badge-accent" href={url}>
+          <a className="badge badge-accent" href={url}>
             {project.companyName}
           </a>
           {project.link && (
-            <a class="badge badge-primary" href={project.link}>
+            <a className="badge badge-primary" href={project.link}>
               Visit
             </a>
           )}

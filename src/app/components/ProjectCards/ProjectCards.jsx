@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { basePath } from "../data";
+import { basePath } from "../../data";
 
 export default function ProjectCard({ project, company, url }) {
   let usePath = false

@@ -1,6 +1,6 @@
 "use client";
 import { employmentHistory, getAllProjects } from "./data";
-import ProjectCard from "./components/ProjectCards";
+import ProjectCard from "./components/ProjectCards/ProjectCards";
 
 export default function Home() {
   const allProjects = getAllProjects(employmentHistory);

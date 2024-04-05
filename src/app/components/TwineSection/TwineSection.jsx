@@ -1,5 +1,5 @@
-import { employmentHistory } from "../data";
-import ProjectCard from "../components/ProjectCards";
+import { employmentHistory } from "../../data";
+import ProjectCard from "../ProjectCards/ProjectCards";
 
 export default function TwineSection() {
   const brandingToBgClass = {

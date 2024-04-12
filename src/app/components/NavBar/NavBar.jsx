@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import {getBasePath } from "@/app/data";
 
 const NavButton = ({ name, link }) => {
   return (
@@ -15,7 +16,7 @@ const NavBar = () => {
       className={`navbar bg-base-100 z-50`}
     >
       <div>
-        <NavButton name="Home" link="/" />
+        <NavButton name="Home" link={getBasePath()} />
         {/* <NavButton name="About" /> */}
         {/* <NavButton name="Contact" /> */}
       </div>

@@ -1,4 +1,12 @@
 export const basePath = "/my-portfolio";
+
+export const getBasePath = () => {
+  if (process.env.NODE_ENV === 'production') {
+    return "/my-portfolio";
+  }
+  return "/"
+}
+
 export const employmentHistory = [
   {
     position: "Software Engineer",

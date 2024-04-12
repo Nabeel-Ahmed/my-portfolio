@@ -1,8 +1,11 @@
-"use client";
+"use strict";
 import React, { useState, useEffect } from "react";
 import { getBasePath } from "@/app/data";
 
-const NavButton = ({ name, link }) => {
+const NavButton: React.FC<{ name: string; link: string }> = ({
+  name,
+  link,
+}) => {
   return (
     <a className="btn btn-ghost" href={link}>
       {name}

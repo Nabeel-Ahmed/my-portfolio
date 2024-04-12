@@ -8,7 +8,7 @@ export default function ProjectCard({
   url,
 }: {
   project: any;
-  company: string;
+  company: string | undefined;
   url: undefined | string;
 }) {
   let usePath = false;

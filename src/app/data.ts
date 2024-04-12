@@ -1,13 +1,14 @@
+import { Employment, Project } from "../../utils/types";
 export const basePath = "/my-portfolio";
 
-export const getBasePath = () => {
+export const getBasePath = (): string => {
   if (process.env.NODE_ENV === "production") {
     return "/my-portfolio";
   }
   return "/";
 };
 
-export const employmentHistory = [
+export const employmentHistory: Employment[] = [
   {
     position: "Software Engineer",
     company: "Twine",
@@ -21,7 +22,6 @@ export const employmentHistory = [
     tech: ["AWS Lambda", "puppeteer", "SQL"],
     overview:
       "At Twine I worked in a team of 3 using the agile methodolgy and a produt focus reporting directly to the engineering manager. I worked on a variety of different projects in both frontend and backend capacities using React, JavaScript and TypeScript on the frontend end and PHP Laravel on the backend. My main area of responsibility being the Twine Platform frontend which I took ownership over.",
-    // I worked on a vareity of different projects. Here's some of the things I worked on at Twine.",
     projects: [
       {
         name: "Twine Platform",
@@ -153,22 +153,22 @@ export const employmentHistory = [
   },
 ];
 
-export function getAllProjects(employmentHistory) {
-  // Initialize an empty array to store all projects
-  let allProjects = [];
+export function getAllProjects(employmentHistory: Employment[]): Project[] {
+  // Initialize an empty array of type Project[] to store all projects
+  let allProjects: Project[] = [];
 
   // Iterate over each employment object
-  employmentHistory.forEach((employment) => {
+  employmentHistory.forEach((employment: Employment) => {
     // Iterate over each project within the employment object
     employment.projects.forEach((project) => {
-      // Add the company name property to the project object
-      const projectWithCompanyName = {
-        ...project,
+      // Construct the project object with spread operator
+      const projectWithCompanyName: Project = {
+        ...project, // Spread all properties from the project object
         companyName: employment.company,
         url: employment.url,
       };
 
-      // Push the augmented project object to the array of all projects
+      // Push the project object to the array of all projects
       allProjects.push(projectWithCompanyName);
     });
   });
@@ -176,7 +176,3 @@ export function getAllProjects(employmentHistory) {
   // Return the array containing all projects
   return allProjects;
 }
-
-// Usage example:
-// const allProjects = getAllProjects(employmentHistory);
-// console.log(allProjects);

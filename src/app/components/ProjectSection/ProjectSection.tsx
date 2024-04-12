@@ -11,7 +11,7 @@ export default function ProjectSection() {
           <ProjectCards
             key={projIndex}
             project={project}
-            company={project.company}
+            companyName={project.companyName}
             url={project.url}
           />
         ))}

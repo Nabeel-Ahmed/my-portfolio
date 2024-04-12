@@ -30,6 +30,7 @@ const BlogPosts = () => {
       <div className="pt-4">
         {articles.map((article) => (
           <a
+            key={article.id}
             className="card md:w-2/5  bg-base-300 shadow-xl"
             href={article.url}
           >

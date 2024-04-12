@@ -1,11 +1,26 @@
-// ProjectCard.js
-
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { basePath } from "../../data";
 
-export default function ProjectCard({ project, company, url }) {
+interface Project {
+  imageUrl?: string;
+  altText: string;
+  name: string;
+  languages: string[];
+  description: string;
+  companyName: string;
+  link?: string;
+}
+export default function ProjectCard({
+  project,
+  company,
+  url,
+}: {
+  project: Project;
+  company: string;
+  url: string;
+}) {
   let usePath = false;
 
   if (process.env.NODE_ENV === "production") {
@@ -31,7 +46,7 @@ export default function ProjectCard({ project, company, url }) {
       <div className="card-body flex flex-col h-full">
         <h2 className="card-title">{project.name}</h2>
         <div className="flex gap-1 flex-wrap">
-          {project.languages.map((language, langIndex) => (
+          {project.languages.map((language: string, langIndex: number) => (
             <div key={langIndex} className="badge badge-secondary">
               {language}
             </div>

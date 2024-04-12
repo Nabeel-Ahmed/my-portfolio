@@ -12,9 +12,7 @@ const NavButton = ({ name, link }) => {
 const NavBar = () => {
   return (
       <nav
-      className={`navbar bg-base-100 z-50 ${
-        showNavBar ? "fixed top-0" : "hidden"
-      }`}
+      className={`navbar bg-base-100 z-50`}
     >
       <div>
         <NavButton name="Home" link="/" />

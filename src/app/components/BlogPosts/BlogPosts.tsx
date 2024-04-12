@@ -25,6 +25,8 @@ interface Article {
   }, []);
 
   return (
+    <div className="p-14 card bg-base-400">
+    <h1 className="text-3xl">Want to read more? Check out my blog</h1>
     <div className="pt-4">
       {articles.map((article) => (
         <a className="card md:w-2/5  bg-base-300 shadow-xl" href={article.url}>
@@ -37,6 +39,7 @@ interface Article {
           </div>
         </a>
       ))}
+    </div>
     </div>
   );
 };

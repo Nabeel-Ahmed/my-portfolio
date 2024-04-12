@@ -6,12 +6,11 @@ import { motion } from "framer-motion";
 import { basePath } from "../../data";
 
 export default function ProjectCard({ project, company, url }) {
-  let usePath = false
+  let usePath = false;
 
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === "production") {
     usePath = true;
   }
-
 
   return (
     <div

@@ -1,11 +1,11 @@
 export const basePath = "/my-portfolio";
 
 export const getBasePath = () => {
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === "production") {
     return "/my-portfolio";
   }
-  return "/"
-}
+  return "/";
+};
 
 export const employmentHistory = [
   {
@@ -40,7 +40,7 @@ export const employmentHistory = [
         languages: ["TypeScript", "Next.js", "Webflow", "AWS"],
         imageUrl: "/images/twinelp.webp",
         link: "https://twine.net/find/animators/",
-        altText: "Twine Animator Landing Page"
+        altText: "Twine Animator Landing Page",
       },
       {
         name: "Dataset Management Platform",
@@ -49,7 +49,7 @@ export const employmentHistory = [
         languages: ["JavaScript", "Tailwind", "Next.js"],
         link: "https://dmp.twine.net/",
         imageUrl: "/images/twineDMP.webp",
-        altText: "Twine Dataset Management Platform"
+        altText: "Twine Dataset Management Platform",
       },
       {
         name: "Job Crawler",
@@ -58,7 +58,7 @@ export const employmentHistory = [
         languages: ["TypeScript", "Puppeteer", "AWS", "Airtable"],
         tech: ["Next JS", "Tailwind"],
         imageUrl: "/images/twineJC.webp",
-        altText: "Twine Job listings"
+        altText: "Twine Job listings",
       },
     ],
   },
@@ -81,7 +81,7 @@ export const employmentHistory = [
         languages: ["TypeScript", "React", "Redux", "Tailwind"],
         imageUrl: "/images/buildyourbundle.webp",
         link: "https://uk.huel.com/products/build-your-own-bundle",
-        altText: "Huel Mix & Match Page"
+        altText: "Huel Mix & Match Page",
       },
     ],
   },
@@ -103,7 +103,7 @@ export const employmentHistory = [
           "Lead development on a bespoke CMS that was desgined to provide support for and manage content of the RailPoint Screens. It included reporting functionality which would monitor upkeep and statistics of Screens and allow users to open support tickets so we could resolve any issues. Build with React, Redux, SCSS and a Django Python backend.",
         languages: ["React", "Redux", "SCSS"],
         imageUrl: "/images/cms2.png",
-        altText: "Railpoint CMS art"
+        altText: "Railpoint CMS art",
       },
       {
         name: "Railpoint Screens",
@@ -111,7 +111,7 @@ export const employmentHistory = [
           "RailPoint Screens use multiple data feeds to display up-to-the-minute travel information in both touch screen and non touchscreen format at train stations all across the UK. They can be used to plan journeys, as live departure boards, maps, to display station information and provide vital information to passengers such as distruptions and engineering works.",
         languages: ["JavaScript", "HTML", "CSS", "MQTT"],
         imageUrl: "/railpoint.webp",
-        altText: "Railpoint Screen desgins"
+        altText: "Railpoint Screen desgins",
       },
       {
         name: "RailPay",
@@ -119,7 +119,7 @@ export const employmentHistory = [
           "An application integrated directly into the RailPoint Screens that enabled Train Operating Companies to allow commuters to purchase train tickets via NFC from RailPoint Touchscreens using their phones. This gave commuters more options to purchase tickets from improving the flow of the stations.  Built using React, Redux, SCSS with a Node JS and Express backend.",
         languages: ["React", "Redux", "SCSS"],
         imageUrl: "/images/RailPay2.jpg",
-        altText: "RailPay Homescreen"
+        altText: "RailPay Homescreen",
       },
       {
         name: "Times2",
@@ -147,7 +147,7 @@ export const employmentHistory = [
           "I worked on Double Parked from Inception to launch, it's an online market place that enables Driving Instructors to move their diary online and manage their bookings. It also allows students to find their perfect instructor that aligns with their needs and book online",
         languages: ["React", "Redux", "Node.js", "Express"],
         imageUrl: "/images/doubleparked.png",
-        altText: "Double Parked Logo"
+        altText: "Double Parked Logo",
       },
     ],
   },

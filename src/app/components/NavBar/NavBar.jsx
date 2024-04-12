@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import {getBasePath } from "@/app/data";
+import { getBasePath } from "@/app/data";
 
 const NavButton = ({ name, link }) => {
   return (
@@ -12,9 +12,7 @@ const NavButton = ({ name, link }) => {
 
 const NavBar = () => {
   return (
-      <nav
-      className={`navbar bg-base-200 z-50`}
-    >
+    <nav className={`navbar bg-base-200 z-50`}>
       <div>
         <NavButton name="Home" link={getBasePath()} />
         {/* <NavButton name="About" /> */}

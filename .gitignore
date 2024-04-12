@@ -37,3 +37,5 @@ next-env.d.ts
 # ENV
 .env
 .env.production
+
+*storybook.log

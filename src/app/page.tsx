@@ -1,13 +1,14 @@
 "use client";
 import { employmentHistory, getAllProjects } from "./data";
 import ProjectCard from "./components/ProjectCards/ProjectCards";
+import BlogPosts from "./components/BlogPosts/BlogPosts";
 
 export default function Home() {
   const allProjects = getAllProjects(employmentHistory);
 
   return (
     <>
-      <div className="min-h-screen max-w-screen bg-gradient-to-b from-gray-700 to-gray-800">
+      <div className="min-h-screen max-w-screen ">
         <div className="text-center flex flex-col items-center justify-center h-screen">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Nabeel Ahmed</h1>
@@ -40,7 +41,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex-grow bg-gradient-to-b from-gray-800 to-gray-000" >
+      <div className="flex-grow ">
         <div className="flex flex-row flex-wrap gap-8 justify-center">
           {allProjects?.map((project, projIndex) => (
             <ProjectCard
@@ -51,7 +52,11 @@ export default function Home() {
             />
           ))}
         </div>
-        {/* <TwineSecion /> */}
+      </div>
+      <div className="divider"></div>
+      <div className="p-14 card bg-base-400">
+        <h1 className="text-3xl">Want to read more? Check out my blog</h1>
+        <BlogPosts />
       </div>
     </>
   );

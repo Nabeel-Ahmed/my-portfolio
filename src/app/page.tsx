@@ -8,6 +8,7 @@ export default function Home() {
 
   return (
     <>
+        {/* todo: Turn into component */}
       <div className="min-h-screen max-w-screen ">
         <div className="text-center flex flex-col items-center justify-center h-screen">
           <div className="max-w-md">
@@ -20,6 +21,7 @@ export default function Home() {
             </p>
           </div>
 
+          {/* todo: Turn into component */}
           <div>
             <div className="overflow-x-hidden max-w-md z-10">
               <div className="py-12 animate-marquee whitespace-nowrap">
@@ -40,7 +42,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+    {/* todo: Turn into component*/}
       <div className="flex-grow ">
         <div className="flex flex-row flex-wrap gap-8 justify-center">
           {allProjects?.map((project, projIndex) => (

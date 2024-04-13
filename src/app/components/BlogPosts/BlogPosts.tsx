@@ -25,9 +25,11 @@ const BlogPosts = () => {
   }, []);
 
   return (
-    <div className="p-14 card bg-base-400">
-      <h1 className="text-3xl">Want to read more? Check out my blog</h1>
-      <div className="pt-4">
+    <div className="p-14 flex justify-center flex-row flex-wrap">
+      <h1 className="text-2xl font-bold">
+        Want to read more? Check out my blog
+      </h1>
+      <div className="pt-4 justify-center flex">
         {articles.map((article) => (
           <a
             key={article.id}

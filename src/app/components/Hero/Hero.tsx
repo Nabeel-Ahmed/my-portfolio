@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="text-center flex flex-col items-center justify-center h-screen">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">Nabeel Ahmed</h1>
-          <p className="py-6">
+          <p className="p-6">
             A software engineer with over 5 years of experience building
             software in different spaces such as marketplaces, Web 3.0,
             e-commerce, Rail and Transport with both frontend and backend

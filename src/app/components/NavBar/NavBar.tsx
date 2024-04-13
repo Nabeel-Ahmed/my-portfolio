@@ -1,6 +1,5 @@
 "use strict";
-import React, { useState, useEffect } from "react";
-import { getBasePath } from "@/app/data";
+import React from "react";
 
 const NavButton: React.FC<{ name: string; link: string }> = ({
   name,
@@ -17,7 +16,7 @@ const NavBar = () => {
   return (
     <nav className={`navbar bg-base-200 z-50`}>
       <div>
-        <NavButton name="Home" link={getBasePath()} />
+        <NavButton name="Home" link="/" />
         {/* <NavButton name="About" /> */}
         {/* <NavButton name="Contact" /> */}
       </div>

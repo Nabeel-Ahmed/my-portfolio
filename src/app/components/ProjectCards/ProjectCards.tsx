@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { basePath } from "../../data";
 
 export default function ProjectCard({
   project,
@@ -11,12 +10,6 @@ export default function ProjectCard({
   company: string | undefined;
   url: undefined | string;
 }) {
-  let usePath = false;
-
-  if (process.env.NODE_ENV === "production") {
-    usePath = true;
-  }
-
   return (
     <div
       className={`card flex-shrink-0 flex-grow-0 md:w-2/5 lg:w-3/12 ${
@@ -26,7 +19,7 @@ export default function ProjectCard({
       {project.imageUrl && (
         <figure>
           <Image
-            src={usePath ? basePath + project.imageUrl : project.imageUrl}
+            src={project.imageUrl}
             alt={project.altText}
             width={800}
             height={200}

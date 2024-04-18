@@ -1,6 +1,13 @@
+import Topography from "../../../../public/filledTopography.svg";
+
 export default function Hero() {
   return (
-    <div className="min-h-screen max-w-screen ">
+    <div
+      className="min-h-screen max-w-screen "
+      style={{
+        backgroundImage: `url(${Topography.src})`, // Use the imported SVG
+      }}
+    >
       <div className="text-center flex flex-col items-center justify-center h-screen">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">Nabeel Ahmed</h1>

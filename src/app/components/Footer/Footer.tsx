@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer items-center p-4 bg-neutral text-neutral-content">
       <aside className="items-center grid-flow-col">
         <Image src={favicon} alt="logo" width={40} height={40} />
-        <p>Built with React + Next.js + Tailwind </p>
+        <p>Built with React + Next.js + TypeScript + Tailwind </p>
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a

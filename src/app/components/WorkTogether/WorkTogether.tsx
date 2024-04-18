@@ -6,7 +6,7 @@ export default function WorkTogether() {
       {/* <ServiceCard service="Software Development" description="" /> */}
       {/* <ServiceCard service="Web Development" description="Wesbites" /> */}
       {/* <ServiceCard service="Web 3" description="Smart Contract Auditing" /> */}
-      <h1 className="text-2xl font-bold justify-center flex">
+      <h1 className="text-2xl font-bold justify-center">
         Want to get in touch? Email &nbsp;
         <a href="mailto:me@nabeelahmed.co.uk"> me@nabeelahmed.co.uk </a>
       </h1>

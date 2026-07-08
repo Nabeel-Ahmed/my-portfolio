@@ -12,7 +12,7 @@ export default function Home() {
       <div className="divider" />
       <BlogPosts />
       <div className="divider" />
-      <WorkTogether />
+      {/* <WorkTogether /> */}
     </>
   );
 }
